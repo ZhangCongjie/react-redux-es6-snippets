@@ -1,0 +1,90 @@
+'.source.js':
+  'React Redux ES6 Container':
+    'prefix': 'rcontainer'
+    'description': 'React Redux Container'
+    'body': """
+      import React, { Component, PropTypes } from 'react';
+      import { connect } from 'react-redux';
+
+      class ${1:Class} extends Component {
+        render() {
+          return (
+            <div>
+              ${5}
+            </div>
+          );
+        }
+      }
+
+      ${1:Class}.propsTypes = {
+        ${4}
+      }
+
+      export default connect(${2}, ${3})(${1:Class});
+    """
+
+  'React ES6 Component':
+    'prefix': 'rcomponent'
+    'description': 'React ES6 Component'
+    'body': """
+      import React, { Component, PropTypes } from 'react';
+
+      class ${1:Class} extends Component {
+        render() {
+          return (
+            <div>
+              ${3}
+            </div>
+          );
+        }
+      }
+
+      ${1:Class}.propsTypes = {
+        ${2}
+      }
+
+      export default ${1:Class};
+    """
+
+  'React Pure Function Component':
+    'prefix': 'rfcomponent'
+    'description': 'React Pure Function Component'
+    'body': """
+      import React, { PropTypes } from 'react';
+
+      const ${1:Class} = (${2:props}) => {
+        return (
+          <div>
+            ${4}
+          </div>
+        );
+      };
+
+      ${1:Class}.propsTypes = {
+        ${3}
+      }
+
+      export default ${1:Class};
+    """
+
+  'React Redux Pure Function Container':
+    'prefix': 'rfcontainer'
+    'description': 'React Redux Pure Function Container'
+    'body': """
+      import React, { PropTypes } from 'react';
+      import { connect } from 'react-redux';
+
+      const ${1:Class} = (${2:props}) => {
+        return (
+          <div>
+            ${6}
+          </div>
+        );
+      };
+
+      ${1:Class}.propsTypes = {
+        ${5}
+      }
+
+      export default connect(${3}, ${4})(${1:Class});
+    """

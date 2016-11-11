@@ -1,0 +1,26 @@
+{
+  "name": "react-redux-es6-snippets",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangCongjie/react-redux-es6-snippets.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "es6",
+    "ES2016",
+    "snippets",
+    "atom"
+  ],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "author": "ZhangCongjie <zhangcongjie402@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhangCongjie/react-redux-es6-snippets/issues"
+  },
+  "homepage": "https://github.com/ZhangCongjie/react-redux-es6-snippets#readme"
+}
