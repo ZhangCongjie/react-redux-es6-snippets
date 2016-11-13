@@ -9,14 +9,14 @@
         render() {
           return (
             <div>
-              ${5}
+              ${4}
             </div>
           );
         }
       }
 
       ${1:Class}.propsTypes = {
-        ${4}
+        ${5}
       };
 
       export default connect(${2}, ${3})(${1:Class});
@@ -31,14 +31,14 @@
         render() {
           return (
             <div>
-              ${3}
+              ${2}
             </div>
           );
         }
       }
 
       ${1:Class}.propsTypes = {
-        ${2}
+        ${3}
       };
 
       export default ${1:Class};
@@ -52,13 +52,13 @@
       const ${1:Class} = (${2:props}) => {
         return (
           <div>
-            ${4}
+            ${3}
           </div>
         );
       };
 
       ${1:Class}.propsTypes = {
-        ${3}
+        ${4}
       };
 
       export default ${1:Class};
@@ -73,13 +73,13 @@
       const ${1:Class} = (${2:props}) => {
         return (
           <div>
-            ${6}
+            ${5}
           </div>
         );
       };
 
       ${1:Class}.propsTypes = {
-        ${5}
+        ${6}
       };
 
       export default connect(${3}, ${4})(${1:Class});
@@ -110,7 +110,7 @@
     'body': """
       export const ${1:action} = (${2:data}) => ({
         type: ${3},
-        payload: ${2:data},
+        payload: ${4:data},
       });
     """
 
