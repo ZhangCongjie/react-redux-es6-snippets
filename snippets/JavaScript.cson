@@ -17,7 +17,7 @@
 
       ${1:Class}.propsTypes = {
         ${4}
-      }
+      };
 
       export default connect(${2}, ${3})(${1:Class});
     """
@@ -39,7 +39,7 @@
 
       ${1:Class}.propsTypes = {
         ${2}
-      }
+      };
 
       export default ${1:Class};
     """
@@ -59,7 +59,7 @@
 
       ${1:Class}.propsTypes = {
         ${3}
-      }
+      };
 
       export default ${1:Class};
     """
@@ -80,7 +80,7 @@
 
       ${1:Class}.propsTypes = {
         ${5}
-      }
+      };
 
       export default connect(${3}, ${4})(${1:Class});
     """
