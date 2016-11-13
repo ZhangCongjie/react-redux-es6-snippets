@@ -1,7 +1,6 @@
 '.source.js':
-  'React Redux ES6 Container':
+  'React Redux ES6 Class Container':
     'prefix': 'rcontainer'
-    'description': 'React Redux Container'
     'body': """
       import React, { Component, PropTypes } from 'react';
       import { connect } from 'react-redux';
@@ -23,9 +22,8 @@
       export default connect(${2}, ${3})(${1:Class});
     """
 
-  'React ES6 Component':
+  'React ES6 Class Component':
     'prefix': 'rcomponent'
-    'description': 'React ES6 Component'
     'body': """
       import React, { Component, PropTypes } from 'react';
 
@@ -46,9 +44,8 @@
       export default ${1:Class};
     """
 
-  'React Pure Function Component':
+  'React Component Function':
     'prefix': 'rfcomponent'
-    'description': 'React Pure Function Component'
     'body': """
       import React, { PropTypes } from 'react';
 
@@ -67,9 +64,8 @@
       export default ${1:Class};
     """
 
-  'React Redux Pure Function Container':
+  'React Redux Container Function':
     'prefix': 'rfcontainer'
-    'description': 'React Redux Pure Function Container'
     'body': """
       import React, { PropTypes } from 'react';
       import { connect } from 'react-redux';
@@ -88,3 +84,52 @@
 
       export default connect(${3}, ${4})(${1:Class});
     """
+
+  'ES6 Redux Reducer':
+    'prefix': 'rrd'
+    'body': """
+      import { ${2} } from '${3}';
+      const initialState = {
+        ${5}
+      };
+
+      const ${1:reducer} = (state = initialState, action) => {
+        switch (action.type) {
+          case ${2}:
+            return ${4};
+          default:
+            return state;
+        }
+      };
+
+      export default ${1:reducer};
+    """
+
+  'ES6 Redux Action Creator':
+    'prefix': 'rac'
+    'body': """
+      export const ${1:action} = (${2:data}) => ({
+        type: ${3},
+        payload: ${2:data},
+      });
+    """
+
+  'ES6 Redux Thunk Action Creator':
+    'prefix': 'rtac'
+    'body': """
+      export const ${1} = (${2}) => (${3:dispatch}, ${4:getState}) => {
+        ${5}
+      };
+    """
+
+  'ES6 Redux Action Type':
+    'prefix': 'rtp'
+    'body': 'export const ${1} = \'${1}\';${0}'
+
+  'ES6 Redux Dispatch':
+    'prefix': 'rdsph'
+    'body': 'dispatch(${1:action}(${2:param}));${0}'
+
+  'React ES6 bind method to this':
+    'prefix': 'rbm',
+    'body': 'this.${1} = this.${1}.bind(this);${0}'

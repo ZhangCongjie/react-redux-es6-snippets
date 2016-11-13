@@ -1,7 +1,7 @@
 {
   "name": "react-redux-es6-snippets",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.0",
+  "description": "react redux es6 snippets",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZhangCongjie/react-redux-es6-snippets.git"

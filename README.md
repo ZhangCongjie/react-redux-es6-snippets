@@ -2,5 +2,5 @@
 
 * react
 * redux
-* ES2016
-* eslint
+* ES2015
+* eslint([eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb))
