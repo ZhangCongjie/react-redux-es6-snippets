@@ -15,7 +15,7 @@
         }
       }
 
-      ${1:Class}.propsTypes = {
+      ${1:Class}.propTypes = {
         ${5}
       };
 
@@ -37,7 +37,7 @@
         }
       }
 
-      ${1:Class}.propsTypes = {
+      ${1:Class}.propTypes = {
         ${3}
       };
 
@@ -57,7 +57,7 @@
         );
       };
 
-      ${1:Class}.propsTypes = {
+      ${1:Class}.propTypes = {
         ${4}
       };
 
@@ -78,7 +78,7 @@
         );
       };
 
-      ${1:Class}.propsTypes = {
+      ${1:Class}.propTypes = {
         ${6}
       };
 
